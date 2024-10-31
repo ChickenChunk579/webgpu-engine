@@ -1,0 +1,18 @@
+{
+  "name": "engine",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^12.1.1",
+    "parcel": "^2.12.0",
+    "rollup": "^4.24.3",
+    "rollup-plugin-dts": "^6.1.1",
+    "rollup-plugin-esbuild-minify": "^1.1.2"
+  },
+  "type": "module",
+  "dependencies": {
+    "@webgpu/types": "^0.1.49",
+    "acorn-jsx": "^5.3.2"
+  }
+}

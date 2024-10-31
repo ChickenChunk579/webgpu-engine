@@ -1,0 +1,23 @@
+{
+  "tasks": {
+    "dev": "deno run -A --unstable-webgpu watch.ts",
+    "run": "deno run -A --unstable-webgpu src/main-desktop.ts"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1"
+  },
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "dom.asynciterable",
+      "deno.ns",
+      "deno.unstable",
+      "deno.webgpu"
+    ],
+    "jsx": "react",
+    "jsxFactory": "SceneTree.React.createElement",
+    "jsxFragmentFactory": "SceneTree.React.Fragment"
+  },
+  "exclude": ["./src/main-web.ts"]
+}
